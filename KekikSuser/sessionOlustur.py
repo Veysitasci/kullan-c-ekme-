@@ -12,9 +12,9 @@ if not os.path.isdir(SESSION):
 
 def sessioncu():
     "Gelen İnput ile session oluşturur."
-    api_id    = konsol.input('[yellow]API ID        : [/]')
-    api_hash  = konsol.input('[yellow]API HASH      : [/]')
-    telefon   = konsol.input('[yellow]Telefon(+xxxx): [/]').replace(' ', '')
+    api_id    = konsol.input('[yellow]API ID        : [4124931]')
+    api_hash  = konsol.input('[yellow]API HASH      : [ee46fee342dcc158c59211cfadba04d2]')
+    telefon   = konsol.input('[yellow]Telefon(+xxxx): [AQA0zkLvNyUDsGOh8nGjVL0c5006venym-GHR7MLnba1jWIYvnEQkBmTOJ8bhfZ3Fvej3HExBH8bHPMQwxWHUpG4jpUV-fJTqeLBjb2kqqO2QOXuID4mDm1ygf81oYRHJlJFeeFtRXrKEHpqZaDm7lyU5fkH4OEbneWJXcp_nLBDiXcCc_uzTcMGK3mgze3Sibr0IkiMj39vdLfu2oMOh4B9whbupSh8y2Sqe8eWGpdXaVx3ffnQvy9Our_jvOiPn-3HeLnoLFkeyE9kbPXTXaLa3j_QfsqA4hTZJZb6hBmpbxFJl4LFxhlqqNomyoMOw4I7vWM4McuOic5gUms9y7NqAAAAATNitigA]').replace(' ', '')
 
     try:
         client = TelegramClient(f"{SESSION}{telefon}", api_id, api_hash)
